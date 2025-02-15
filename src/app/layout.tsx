@@ -1,9 +1,23 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Inter, Poppins, Fredoka } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+const interSans = Inter({
+  variable: "--font-inter-sans",
+  subsets: ["latin"],
+});
+const PoppinsSans = Poppins({
+  variable: "--font-poppins-sans",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"],
+});
+
+const fredokaSans = Fredoka({
+  variable: "--font-fredoka-sans",
   subsets: ["latin"],
 });
 
@@ -25,7 +39,7 @@ const RootLayout = ({ children }: IRootProps) => {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${interSans.variable} ${PoppinsSans.variable} ${fredokaSans.variable} antialiased`}
       >
         {children}
       </body>

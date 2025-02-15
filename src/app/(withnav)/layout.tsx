@@ -1,10 +1,9 @@
-import Navbar from "@/components/shared/navbar";
+import { IChildren } from "@/interface";
 import React, { FC } from "react";
+import { Navbar } from "@/components/shared";
 
-type IRootProps = Readonly<{
-  children: React.ReactNode;
-}>;
-const layout: FC<IRootProps> = ({ children }) => {
+
+const layout: FC<IChildren> = ({ children }) => {
   return (
     <>
       <Navbar />
