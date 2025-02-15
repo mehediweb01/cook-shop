@@ -15,10 +15,10 @@ export const Navbar = () => {
   const pathName = usePathname();
   return (
     <div>
-      <div className="flex justify-between items-center gap-3 px-3 sm:px-5 pb-6 pt-5">
+      <div className="flex justify-between items-center gap-3 px-3 sm:px-5 pb-4 pt-5">
         <Link href="/" className="text-xl sm:text-3xl font-bold">
           <span className="text-[#FF7A00]">cook</span>
-          Show
+          Shop
         </Link>
         <div className="space-x-3 sm:space-x-5">
           {NavItems.map(({ label, href }, i) => (
@@ -28,7 +28,7 @@ export const Navbar = () => {
               className={cn(
                 navItemsClassName,
                 pathName === href &&
-                  "font-medium pb-[26px] border-b-2 border-[#FF7A00]"
+                  "font-medium pb-[24px] border-b-2 border-[#FF7A00]"
               )}
             >
               {label}

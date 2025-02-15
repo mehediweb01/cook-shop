@@ -1,9 +1,14 @@
+import HomeSearch from "@/components/pages/home";
+import Image from "next/image";
 import React from "react";
 
 const HomePage = () => {
   return (
-    <div className="flex min-h-screen justify-center items-center">
-      <h1 className="text-4xl">This is a home page</h1>
+    <div className="flex items-start justify-center min-h-[66svh]">
+      <div className="flex flex-col -mt-10 mx-4">
+        <Image src="/logo.png" alt="logo" height={200} width={350} />
+        <HomeSearch />
+      </div>
     </div>
   );
 };
