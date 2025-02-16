@@ -5,8 +5,14 @@ import React from "react";
 const HomePage = () => {
   return (
     <div className="flex items-start justify-center min-h-[66svh]">
-      <div className="flex flex-col -mt-10 mx-4">
-        <Image src="/logo.png" alt="logo" height={200} width={350} />
+      <div className="flex flex-col -mt-7 sm:-mt-10 mx-4">
+        <Image
+          src="/logo.png"
+          alt="logo"
+          height={200}
+          width={350}
+          className="-z-[999999999999]"
+        />
         <HomeSearch />
       </div>
     </div>
