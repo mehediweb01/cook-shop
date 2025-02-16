@@ -26,6 +26,7 @@ export const Navbar = () => {
               key={i}
               href={href}
               className={cn(
+                "hover:font-medium transition-all duration-300",
                 navItemsClassName,
                 pathName === href &&
                   "font-medium pb-[24px] border-b-2 border-[#FF7A00]"
